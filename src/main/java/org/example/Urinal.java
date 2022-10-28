@@ -14,28 +14,30 @@ public class Urinal {
 
 
     void getState(){
+        System.out.println("Enter the input: ");
         Scanner s = new Scanner(System.in);
         String input = s.nextLine();
         State = new int[input.length()];
         for(int i =0; i<input.length();i++){
             State[i]=input.charAt(i)-'0';
         }
-//    System.out.println(Arrays.toString(State));
     }
     boolean isValid(int[] tempx){
         if(!(tempx.length>=0 && tempx.length<=20))
             return false;
         for(int i=0; i<tempx.length; i++){
-            if(tempx[i]!=0 && tempx[i]!=1)
+            if((tempx[i]!=0) && (tempx[i]!=1))
                 return false;
-            if(tempx[i]== 0 ){
-                    int prevIndex = i - 1;
-                    int nextIndex = i + 1;
-                    if ((prevIndex < 0 || tempx[prevIndex] == 0) && (nextIndex >= tempx.length || tempx[nextIndex] == 0))
-                        return true;
+            else if(tempx[i]== 1 ){
+                    if(i==0)
+                        return !(tempx[i + 1] == 1);
+                    else if (i==tempx.length-1)
+                        return !(tempx[i-1]==1);
+                    else if ((tempx[i-1] == 1)||(tempx[i+1] == 1))
+                        return false;
             }
         }
-        return false;
+        return true;
     }
     public int calculateCount() {
         int count = 0;
