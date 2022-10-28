@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1b37da9-a7ec-4020-861d-757920152756" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/UrinalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f1b37da9-a7ec-4020-861d-757920152756" name="Changes" comment="First Test">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Urinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Urinal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +94,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666921386412</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Test">
+      <created>1666931262955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666931262955</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,5 +114,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Test" />
   </component>
 </project>

@@ -20,7 +20,10 @@ public class Urinal {
     System.out.println(Arrays.toString(State));
     }
     boolean isValid(int[] tempx){
+        if(!(tempx.length>=0 && tempx.length<=20))
+            return false;
         for(int i=0; i<tempx.length; i++){
+            if(tempx[i]!=0 && tempx[i]!=1) return false;
             if(tempx[i]== 0 ){
                     int prevIndex = i - 1;
                     int nextIndex = i + 1;
